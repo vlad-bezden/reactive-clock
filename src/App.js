@@ -1,6 +1,6 @@
 import React from 'react'
 import Clock from './components/Clock'
-import {compose} from './utils/funcLib'
+import { compose } from './utils/funcLib'
 
 /**
  * Fires off timer and calls render function every second
@@ -17,6 +17,7 @@ const startTicking = (render) =>
         ),
         oneSecond()
     )
+
 /**
  * One Second interval. All the way functional :)
  */

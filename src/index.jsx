@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import startTicking from './App'
 
+import './css/app.css'
+
 /**
  * Main entry to display component on the HTML page
  * @param {ReactDOM} Component - React component to be rendered
