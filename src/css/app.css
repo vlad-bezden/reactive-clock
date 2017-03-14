@@ -14,10 +14,8 @@ body {
 }
 
 div.clock {
-  border: solid 2px;
+  border: solid 1px;
   border-radius: 10px;
-  position: relative;  
-  display: flex;
 }
 
 div.clock span {
