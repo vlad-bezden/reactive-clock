@@ -2,6 +2,9 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: "./src/index.jsx",
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     output: {
         path: "dist",
         filename: "bundle.js",
