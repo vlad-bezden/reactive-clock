@@ -14,6 +14,7 @@ const Clock = ({ hours, minutes, seconds, ampm }) => (
         <span>{minutes}</span>
         <span>:</span>
         <span>{seconds}</span>
+        <span> </span>
         <span>{ampm}</span>
     </div>)
 
