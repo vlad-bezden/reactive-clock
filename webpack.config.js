@@ -1,4 +1,5 @@
-var webpack = require('webpack')
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
     entry: "./src/index.jsx",
@@ -6,7 +7,7 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     output: {
-        path: "dist",
+        path: path.resolve(__dirname, 'dist'),
         filename: "bundle.js",
         sourceMapFilename: 'bundle.map'
     },
