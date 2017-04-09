@@ -25,3 +25,5 @@ const startTicking = render =>
     oneSecond()
   )
 ```
+
+The working example of this application at [https://clock.netlify.com](https://clock.netlify.com/)
