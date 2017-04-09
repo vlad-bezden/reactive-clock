@@ -9,10 +9,10 @@ import './css/app.css'
  * @param {ReactDOM} Component - React component to be rendered
  */
 const render = Component => civilianTime =>
-    ReactDOM.render(
-        <Component {...civilianTime} />,
-        document.getElementById('app')
-    )
+  ReactDOM.render(
+    <Component {...civilianTime} />,
+    document.getElementById('app')
+  )
 
 // start application
 startTicking(render)    

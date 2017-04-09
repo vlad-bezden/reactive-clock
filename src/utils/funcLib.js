@@ -3,9 +3,9 @@
  * @param {function[]} funcs - functions to be composed
  */
 const compose = (...funcs) =>
-    (arg) =>
-        funcs.reduce(
-            (composed, func) => func(composed), arg
-        )
+  (arg) =>
+    funcs.reduce(
+      (composed, func) => func(composed), arg
+    )
 
 export { compose }
