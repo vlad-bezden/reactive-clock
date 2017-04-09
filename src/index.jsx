@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import startTicking from './App'
+import startTicking from './app'
 
 import './css/app.css'
 
@@ -15,4 +15,4 @@ const render = Component => civilianTime =>
   )
 
 // start application
-startTicking(render)    
+startTicking(render)

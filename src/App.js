@@ -5,7 +5,7 @@ import { compose } from './utils/funcLib'
  * Fires off timer and calls render function every second
  * @param {function} render - function that provides rendering of the UI
  */
-const startTicking = (render) =>
+const startTicking = render =>
   setInterval(
     compose(
       getCurrentTime,

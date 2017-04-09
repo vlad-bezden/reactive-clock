@@ -4,24 +4,24 @@ Example of digital clock using ReactJS and example of functional programming (FP
 
 ```javascript
 const compose = (...funcs) =>
-    (arg) =>
-        funcs.reduce(
-            (composed, func) => func(composed), arg
-        )
+  (arg) =>
+    funcs.reduce(
+    (composed, func) => func(composed), arg
+  )
 ```
 
 Here is an example how it works:
 
 ```javascript
-const startTicking = (render) =>
-    setInterval(
-        compose(
-            getCurrentTime,
-            abstractClockTime,
-            convertToCivilianTime,
-            doubleDigits,
-            render(Clock)
-        ),
-        oneSecond()
-    )
+const startTicking = render =>
+  setInterval(
+    compose(
+      getCurrentTime,
+      abstractClockTime,
+      convertToCivilianTime,
+      doubleDigits,
+      render(Clock)
+    ),
+    oneSecond()
+  )
 ```
