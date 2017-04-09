@@ -8,4 +8,4 @@ const compose = (...funcs) =>
             (composed, func) => func(composed), arg
         )
 
-export {compose}
+export { compose }
